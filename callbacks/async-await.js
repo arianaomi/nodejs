@@ -4,7 +4,7 @@ function build(wallToBuild) {
   return new Promise((resolve, reject) => {
     setTimeout(() => {
       wallToBuild.isBuilt = true;
-      wallToBuild.isBuilt ? resolve(wallToBuild) : reject("cannot build");
+      wallToBuild.isBuilt ? resolve(wallToBuild) : reject('cannot build')
     }, 3000);
   });
 }

@@ -22,9 +22,9 @@ function planish(wallToPlanish) {
 function paint(wallToPaint) {
   return new Promise((resolve, reject) => {
     setTimeout(() => {
-      wallToPaint.isPainted = true;
-      wallToPaint.isPainted ? resolve(wallToPaint) : reject("cannot paint");
-    }, 4000);
+      wallToPaint.isPainted = true
+      wallToPaint.isPainted ? resolve(wallToPaint) : reject('cannot paint')
+    }, 4000)
   });
 }
 
